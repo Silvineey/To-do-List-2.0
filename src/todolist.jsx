@@ -10,6 +10,7 @@ export default function Todolist(){
         form.preventDefault()
         if(novoitem===""){
             window.alert("Não adicione tarefas vazias alma sebosa")
+            return
         }
         else{
             setlista([...lista,{text:novoitem}])
